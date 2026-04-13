@@ -477,6 +477,19 @@
       text-shadow: 0 0 6px rgba(0,255,136,0.5);
     }
 
+    .footer-link {
+      color: var(--neon-blue);
+      text-decoration: none;
+      text-shadow: 0 0 6px rgba(0,207,255,0.6);
+      border-bottom: 1px solid rgba(0,207,255,0.35);
+      padding-bottom: 1px;
+      transition: color 0.2s, text-shadow 0.2s;
+    }
+    .footer-link:hover {
+      color: #fff;
+      text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+    }
+
     /* Score pulse on gain */
     @keyframes scorePop {
       0%   { transform: scale(1.5); }
@@ -552,7 +565,7 @@
   </div>
 
   <footer>
-    Made by <span>Ridhaan</span> &nbsp;·&nbsp; &copy; 2026 Ridhaan. All rights reserved.
+    Made by <span>Ridhaan</span> &nbsp;·&nbsp; &copy; 2026 Ridhaan. All rights reserved. &nbsp;·&nbsp; <a href="info.html" class="footer-link">info</a>
   </footer>
 
 <script>
