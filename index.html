@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>REFLEX RUSH</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
   <style>
     :root {
       --neon-green: #00ff88;
@@ -20,7 +20,7 @@
 
     body {
       background: var(--bg);
-      font-family: 'Share Tech Mono', monospace;
+      font-family: 'Orbitron', sans-serif; /* Applied globally here */
       color: var(--neon-green);
       height: 100vh; /* strict height to prevent scrolling */
       display: flex;
@@ -68,7 +68,6 @@
     }
 
     .game-title {
-      font-family: 'Orbitron', sans-serif;
       font-weight: 900;
       font-size: clamp(1.8rem, 5vw, 3rem);
       letter-spacing: 0.18em;
@@ -86,6 +85,7 @@
       color: rgba(0,255,136,0.45);
       margin-top: 4px;
       text-transform: uppercase;
+      font-weight: 700;
     }
 
     @keyframes flicker {
@@ -133,10 +133,10 @@
       letter-spacing: 0.3em;
       color: rgba(0,255,136,0.5);
       text-transform: uppercase;
+      font-weight: 700;
     }
 
     .hud-value {
-      font-family: 'Orbitron', sans-serif;
       font-size: 1.4rem;
       font-weight: 700;
       line-height: 1.2;
@@ -283,7 +283,6 @@
     .overlay.hidden { display: none; }
 
     .overlay-title {
-      font-family: 'Orbitron', sans-serif;
       font-weight: 900;
       font-size: clamp(1.4rem, 4vw, 2.2rem);
       letter-spacing: 0.15em;
@@ -303,7 +302,6 @@
     }
 
     .final-score-display {
-      font-family: 'Orbitron', sans-serif;
       font-size: 3rem;
       font-weight: 900;
       color: var(--neon-yellow);
@@ -312,7 +310,6 @@
     }
 
     .btn {
-      font-family: 'Orbitron', sans-serif;
       font-weight: 700;
       font-size: 0.85rem;
       letter-spacing: 0.2em;
@@ -345,7 +342,6 @@
     /* ── FLOATING FEEDBACK ── */
     .float-text {
       position: absolute;
-      font-family: 'Orbitron', sans-serif;
       font-weight: 700;
       font-size: 1rem;
       pointer-events: none;
@@ -389,11 +385,13 @@
       position: relative;
       z-index: 10;
       padding-bottom: 15px;
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       letter-spacing: 0.15em;
-      color: rgba(0,255,136,0.5);
+      color: var(--neon-green); /* Changed to neon green */
+      text-shadow: 0 0 8px rgba(0, 255, 136, 0.6); /* Added neon glow */
       text-align: center;
       line-height: 1.6;
+      font-weight: 700;
     }
   </style>
 </head>
@@ -692,4 +690,5 @@
 </script>
 </body>
 </html>
+
 
